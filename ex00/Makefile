@@ -6,11 +6,11 @@
 #    By: cacortes <cacortes@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2026/08/03 16:43:31 by cacortes          #+#    #+#              #
-#    Updated: 2026/08/03 17:10:23 by cacortes         ###   ########.fr        #
+#    Updated: 2026/08/04 17:46:36 by cacortes         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-SRCS = src/main.cpp
+SRCS = src/main.cpp src/dog.cpp src/animal.cpp src/cat.cpp src/wrongcat.cpp src/wronganimal.cpp
 NAME = polymorphism
 
 CC = c++
