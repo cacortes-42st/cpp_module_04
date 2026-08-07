@@ -6,7 +6,7 @@
 /*   By: cacortes <cacortes@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/08/06 17:11:47 by cacortes          #+#    #+#             */
-/*   Updated: 2026/08/06 17:11:49 by cacortes         ###   ########.fr       */
+/*   Updated: 2026/08/07 17:55:03 by cacortes         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,35 +18,55 @@
 
 int main()
 {
-	const Animal* meta = new Animal();
 	const Animal* j = new Dog();
 	const Animal* i = new Cat();
 
-
-	std::cout << "\n===== NORMAL CLASS TEST ====="<< std::endl;
-	
-	std::cout << std::endl;
-	std::cout << j->getType() << " " << std::endl;
-	std::cout << i->getType() << " " << std::endl;
-	
-	std::cout << std::endl;
-	i->makeSound(); //will output the cat sound!
-	j->makeSound();
-	meta->makeSound();
-
+	delete j;//should not create a leak
 	delete i;
-	delete j;
-	delete meta;
 
 
-	std::cout << "\n===== WRONG CLASS TEST ====="<< std::endl;
+	Animal *animals[20];
+
+	for (int i = 0; i < 20; i++)
+	{
+		if (i < 10)
+			animals[i] = new Cat();
+		else
+			animals[i] = new Dog();
+	}
+
+	for (int j = 0; j < 20; j++)
+		delete animals[j];
+
+	std::cout << "\n===== DEEP COPY TEST ====="<< std::endl;
+
+	std::cout << "\n===== DOGS ====="<< std::endl;
+
+	Dog org;
+
+	org.setIdea(0, "Food");
+
+	Dog copy(org);
+
+	org.setIdea(0, "Cats");
+
+	std::cout << org.getIdea(0) << std::endl;
+	std::cout << copy.getIdea(0) << std::endl;
+
+	std::cout << "\n===== CATS ====="<< std::endl;
 	
-	const WrongAnimal* wrong = new WrongCat();
+	Cat orgs;
 
-	std::cout << wrong->getType() << std::endl;
-	wrong->makeSound();
+	orgs.setIdea(0, "Fish");
 
-	delete wrong;
+	Cat cop(orgs);
+
+	orgs.setIdea(0, "Dogs");
+
+	std::cout << orgs.getIdea(0) << std::endl;
+	std::cout << cop.getIdea(0) << std::endl;
+
+	std::cout << "\n===== END ====="<< std::endl;
 
 	return 0;
 }

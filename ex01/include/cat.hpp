@@ -6,7 +6,7 @@
 /*   By: cacortes <cacortes@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/08/06 17:10:52 by cacortes          #+#    #+#             */
-/*   Updated: 2026/08/06 18:54:08 by cacortes         ###   ########.fr       */
+/*   Updated: 2026/08/07 17:50:53 by cacortes         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,6 +26,9 @@ class Cat : public Animal
 		~Cat();
 
 		virtual void makeSound() const;
+
+		void setIdea(int index, const std::string &idea);
+		std::string getIdea(int index) const;
 };
 
 #endif

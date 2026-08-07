@@ -6,7 +6,7 @@
 /*   By: cacortes <cacortes@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/08/06 17:12:05 by cacortes          #+#    #+#             */
-/*   Updated: 2026/08/06 17:12:07 by cacortes         ###   ########.fr       */
+/*   Updated: 2026/08/07 17:59:10 by cacortes         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@ WrongCat::WrongCat() : WrongAnimal()
 WrongCat::WrongCat(const WrongCat &other) : WrongAnimal()
 {
 	*this = other;
-	std::cout << "WrongCat copy contructor called." << std::endl;
+	std::cout << "WrongCat copy constructor called." << std::endl;
 }
 
 WrongCat &WrongCat::operator=(const WrongCat &value)

@@ -6,7 +6,7 @@
 /*   By: cacortes <cacortes@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/08/06 17:11:27 by cacortes          #+#    #+#             */
-/*   Updated: 2026/08/06 17:11:30 by cacortes         ###   ########.fr       */
+/*   Updated: 2026/08/07 17:59:11 by cacortes         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,7 @@ Animal::Animal() : type("DefaultAnimal")
 Animal::Animal(const Animal &other)
 {
 	*this = other;
-	std::cout << "Animal copy contructor called." << std::endl;
+	std::cout << "Animal copy constructor called." << std::endl;
 }
 
 Animal &Animal::operator=(const Animal &value)

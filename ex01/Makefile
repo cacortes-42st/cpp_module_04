@@ -6,11 +6,11 @@
 #    By: cacortes <cacortes@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2026/08/06 17:12:10 by cacortes          #+#    #+#              #
-#    Updated: 2026/08/06 17:12:22 by cacortes         ###   ########.fr        #
+#    Updated: 2026/08/07 11:34:39 by cacortes         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-SRCS = src/main.cpp src/dog.cpp src/animal.cpp src/cat.cpp src/wrongcat.cpp src/wronganimal.cpp
+SRCS = src/main.cpp src/dog.cpp src/animal.cpp src/cat.cpp src/wrongcat.cpp src/wronganimal.cpp src/brain.cpp
 NAME = fireword
 
 CC = c++

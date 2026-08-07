@@ -6,7 +6,7 @@
 /*   By: cacortes <cacortes@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/08/06 17:10:46 by cacortes          #+#    #+#             */
-/*   Updated: 2026/08/06 18:49:14 by cacortes         ###   ########.fr       */
+/*   Updated: 2026/08/07 17:54:01 by cacortes         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,6 +15,7 @@
 
 #include <iostream>
 #include <string>
+
 #include "brain.hpp"
 
 class	Animal
