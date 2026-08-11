@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   cat.hpp                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: cacortes <cacortes@student.42.fr>          +#+  +:+       +#+        */
+/*   By: cacortes <cacortes@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/08/09 11:30:57 by cacortes          #+#    #+#             */
-/*   Updated: 2026/08/09 11:58:45 by cacortes         ###   ########.fr       */
+/*   Updated: 2026/08/11 13:10:25 by cacortes         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,7 @@
 #define CAT_HPP
 
 #include "aanimal.hpp"
+#include "brain.hpp"
 
 class Cat : public AAnimal
 {

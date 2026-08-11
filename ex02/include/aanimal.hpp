@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   aanimal.hpp                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: cacortes <cacortes@student.42.fr>          +#+  +:+       +#+        */
+/*   By: cacortes <cacortes@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/08/09 11:56:28 by cacortes          #+#    #+#             */
-/*   Updated: 2026/08/09 11:57:41 by cacortes         ###   ########.fr       */
+/*   Updated: 2026/08/11 13:10:21 by cacortes         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,8 +15,6 @@
 
 #include <iostream>
 #include <string>
-
-#include "brain.hpp"
 
 class	AAnimal
 {

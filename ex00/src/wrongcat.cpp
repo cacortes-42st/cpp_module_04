@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   wrongcat.cpp                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: cacortes <cacortes@student.42.fr>          +#+  +:+       +#+        */
+/*   By: cacortes <cacortes@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/08/04 17:24:59 by cacortes          #+#    #+#             */
-/*   Updated: 2026/08/04 17:50:02 by cacortes         ###   ########.fr       */
+/*   Updated: 2026/08/11 11:31:06 by cacortes         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@ WrongCat::WrongCat() : WrongAnimal()
 WrongCat::WrongCat(const WrongCat &other) : WrongAnimal()
 {
 	*this = other;
-	std::cout << "WrongCat copy contructor called." << std::endl;
+	std::cout << "WrongCat copy constructor called." << std::endl;
 }
 
 WrongCat &WrongCat::operator=(const WrongCat &value)

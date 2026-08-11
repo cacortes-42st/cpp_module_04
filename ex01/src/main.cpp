@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   main.cpp                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: cacortes <cacortes@student.42.fr>          +#+  +:+       +#+        */
+/*   By: cacortes <cacortes@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/08/06 17:11:47 by cacortes          #+#    #+#             */
-/*   Updated: 2026/08/07 17:55:03 by cacortes         ###   ########.fr       */
+/*   Updated: 2026/08/11 12:48:29 by cacortes         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,10 +21,14 @@ int main()
 	const Animal* j = new Dog();
 	const Animal* i = new Cat();
 
-	delete j;//should not create a leak
+	delete j;
 	delete i;
 
+	std::cout << std::endl;
 
+	
+	std::cout << "\n===== DEFAULT TEST ====="<< std::endl;
+	
 	Animal *animals[20];
 
 	for (int i = 0; i < 20; i++)
@@ -35,36 +39,42 @@ int main()
 			animals[i] = new Dog();
 	}
 
+	std::cout << "\n===== END ====="<< std::endl;
+
 	for (int j = 0; j < 20; j++)
 		delete animals[j];
 
+	
+	std::cout << std::endl;	
+		
 	std::cout << "\n===== DEEP COPY TEST ====="<< std::endl;
 
 	std::cout << "\n===== DOGS ====="<< std::endl;
 
-	Dog org;
+	Dog one;
 
-	org.setIdea(0, "Food");
+	one.setIdea(0, "Food");
 
-	Dog copy(org);
+	Dog onecopy(one);
 
-	org.setIdea(0, "Cats");
+	one.setIdea(0, "Cats");
 
-	std::cout << org.getIdea(0) << std::endl;
-	std::cout << copy.getIdea(0) << std::endl;
+	std::cout << one.getIdea(0) << std::endl;
+	std::cout << onecopy.getIdea(0) << std::endl;
 
+	
 	std::cout << "\n===== CATS ====="<< std::endl;
 	
-	Cat orgs;
+	Cat two;
 
-	orgs.setIdea(0, "Fish");
+	two.setIdea(0, "Fish");
 
-	Cat cop(orgs);
+	Cat twocopy(two);
 
-	orgs.setIdea(0, "Dogs");
+	two.setIdea(0, "Dogs");
 
-	std::cout << orgs.getIdea(0) << std::endl;
-	std::cout << cop.getIdea(0) << std::endl;
+	std::cout << two.getIdea(0) << std::endl;
+	std::cout << twocopy.getIdea(0) << std::endl;
 
 	std::cout << "\n===== END ====="<< std::endl;
 

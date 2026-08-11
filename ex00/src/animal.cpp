@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   animal.cpp                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: cacortes <cacortes@student.42.fr>          +#+  +:+       +#+        */
+/*   By: cacortes <cacortes@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/08/04 12:44:47 by cacortes          #+#    #+#             */
-/*   Updated: 2026/08/04 14:48:57 by cacortes         ###   ########.fr       */
+/*   Updated: 2026/08/11 11:30:49 by cacortes         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,7 @@ Animal::Animal() : type("DefaultAnimal")
 Animal::Animal(const Animal &other)
 {
 	*this = other;
-	std::cout << "Animal copy contructor called." << std::endl;
+	std::cout << "Animal copy constructor called." << std::endl;
 }
 
 Animal &Animal::operator=(const Animal &value)

@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   cat.cpp                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: cacortes <cacortes@student.42.fr>          +#+  +:+       +#+        */
+/*   By: cacortes <cacortes@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/08/04 16:42:46 by cacortes          #+#    #+#             */
-/*   Updated: 2026/08/04 16:44:08 by cacortes         ###   ########.fr       */
+/*   Updated: 2026/08/11 11:30:54 by cacortes         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@ Cat::Cat() : Animal()
 Cat::Cat(const Cat &other) : Animal()
 {
 	*this = other;
-	std::cout << "Cat copy contructor called." << std::endl;
+	std::cout << "Cat copy constructor called." << std::endl;
 }
 
 Cat &Cat::operator=(const Cat &value)

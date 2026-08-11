@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   dog.hpp                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: cacortes <cacortes@student.42.fr>          +#+  +:+       +#+        */
+/*   By: cacortes <cacortes@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/08/09 11:31:12 by cacortes          #+#    #+#             */
-/*   Updated: 2026/08/09 11:59:00 by cacortes         ###   ########.fr       */
+/*   Updated: 2026/08/11 13:10:28 by cacortes         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,7 @@
 #define DOG_HPP
 
 #include "aanimal.hpp"
+#include "brain.hpp"
 
 class Dog : public AAnimal
 {

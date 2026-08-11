@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   wronganimal.cpp                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: cacortes <cacortes@student.42.fr>          +#+  +:+       +#+        */
+/*   By: cacortes <cacortes@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/08/04 17:24:44 by cacortes          #+#    #+#             */
-/*   Updated: 2026/08/04 17:26:06 by cacortes         ###   ########.fr       */
+/*   Updated: 2026/08/11 11:31:02 by cacortes         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,7 @@ WrongAnimal::WrongAnimal() : type("DefaultAnimal")
 WrongAnimal::WrongAnimal(const WrongAnimal &other)
 {
 	*this = other;
-	std::cout << "WrongAnimal copy contructor called." << std::endl;
+	std::cout << "WrongAnimal copy constructor called." << std::endl;
 }
 
 WrongAnimal &WrongAnimal::operator=(const WrongAnimal &value)
